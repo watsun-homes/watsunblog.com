@@ -1,0 +1,103 @@
+/*アフィリボタン*/
+/* 左ボタン（横並び） */
+.left-btn {
+    width: 100%;  /*ボタンの横幅 */
+    text-align: center;  /*ボタン内の文字中央寄せ */
+    border-radius: 5px;  /*ボタンの角を少し丸く */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-weight: bold;  /*ボタン内文字は太字 */
+}
+ 
+.left-btn a {
+    display: block;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    width: 100%;
+    font-weight: bold ;
+    box-shadow:2px 2px 2px #555;  
+    border-radius: 5px;
+    background-color: #1bb4d3;
+    color: #ffffff !important;
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+    transition: .25s linear;
+    -webkit-transition: .25s linear;
+    -moz-transition: .25s linear;
+}
+ 
+.left-btn a:hover {
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+ box-shadow:none;
+}
+ 
+/* 右ボタン（横並び） */
+.right-btn {
+    text-align:center;
+    width: 100%;
+    float:left;
+    color:#fff;
+    font-weight:bold;
+    border-radius: 5px;  
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+ 
+.right-btn a {
+    display: block;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    width: 100%;
+    font-weight: bold ;
+    box-shadow:2px 2px 2px #555;  
+    border-radius: 5px;
+    background-color: #C81C1C;
+    color: #ffffff !important;
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+    transition: .25s linear;
+    -webkit-transition: .25s linear;
+    -moz-transition: .25s linear;
+}
+ 
+.right-btn a:hover {
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+    box-shadow:none;
+}
+ 
+.box-main {
+    text-align:center;
+    font-size:15px;
+    margin-bottom: 1em;
+}
+ 
+.box-main:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+ 
+@media screen and (min-width: 600px) {
+ 
+.right-btn {
+    width:48%;
+    margin-left:10px;
+}
+ 
+.left-btn {
+    width:48%;
+    float:left;
+    margin-right: 10px;
+    margin-left:0;
+}
+}
