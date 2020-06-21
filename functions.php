@@ -12,9 +12,9 @@ register_nav_menu( 'footer-nav',  ' フッターナビゲーション ' );
 //カスタムメニュー
 
 
-
-
-
+//ブログ内画像画質100％
+add_filter('jpeg_quality', function($arg){return 100;});
+//ブログ内画像画質100％
 
 
 //サイドバーにウィジェット追加

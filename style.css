@@ -30,6 +30,7 @@ img {
 
 a{
     text-decoration: none;
+    color: #1592E6;
 }
 iframe{
     width:100%;
@@ -41,7 +42,7 @@ iframe{
     margin-top: 10px;
     padding: 10px;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
     transition: .3s ease-in-out;
     text-align: center;
@@ -140,23 +141,25 @@ header {
      margin: auto 20px;
 }
  
-.site-title h1 {
+.site-title h1,.site-title .title {
   font-size: 1.5em;
   margin: 0;
   padding: 0px 5px 0;
 }
+
+
 @media(max-width: 436px) {
-.site-title h1{
+.site-title h1,.site-title .title{
     font-size: 1.1em;
     }
 }
 @media(max-width: 386px) {
-.site-title h1{
+.site-title h1,.site-title .title{
     font-size: 1em;
     }
 }
  
-.site-title h1 a {
+.site-title h1 a,.site-title .title a {
   display: block;
   text-decoration: none;
   color: #fff;
@@ -245,6 +248,14 @@ header {
     text-align: center;
     color: #fff;
 }
+#nav-content .menu-title{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 1em;
+}
+
 .header-nav li{
     margin-top: 20px;
 }
@@ -294,7 +305,7 @@ header {
 
 /* top */
 .cp_cssslider {
-	margin: 20px 0 20px;
+	margin: 20px 0 60px;
 	background-color: #93D1F0;
 	box-shadow:0px 0px 5px 0px rgba(0,0,0,0.5);
     position: relative;
@@ -665,7 +676,7 @@ input#s{
 
 /*デフォルトウィジェット*/
 .widget_recent_entries ul, .widget_meta ul, .widget_recent_comments ul, .widget_pages ul, .widget_meta ul, .widget_categories ul, .widget_archive ul, .widget_nav_menu ul {
-  padding: 0;
+  padding: 0 0 10px;
   list-style: none;
 }
 
@@ -893,7 +904,13 @@ input#s{
   text-align: center;
 }
 
-/* ボタン全体 */
+
+
+
+
+
+
+/*---sns丸ボタン---*/
 .flowbtn7{
 border-radius:50%;
 position:relative;
@@ -929,6 +946,7 @@ justify-content:space-around;
 .snsbtniti li{
 flex:0 0 33%;
 text-align:center !important;
+line-height: normal;
 }
 /* ボタンにマウスを乗せた時 */
 .flowbtn7:hover{
@@ -966,6 +984,94 @@ background:radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 8
 background: linear-gradient(135deg, #6699ff 0%,#3b5998 100%);
 }
 
+
+
+
+
+
+
+
+
+/*--sns四角ボタン--*/
+.sns-ul{
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+}
+.sns-ul li {
+  max-width: 350px;
+  width:100%;
+  height: 50px;
+  padding: 5px;
+  text-align: center;
+  list-style: none;
+  box-sizing: border-box;
+  line-height: 40px;
+     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.sns-ul li:hover{
+    background-color: #93D1F0;
+    box-shadow: 0 13px 20px -3px rgba(0,0,0,0.24);
+}
+.sns-ul a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* ボタン全体 */
+.sns-btn{
+position:relative;
+display:inline-block;
+font-size:30px;
+color:#fff!important;
+text-decoration:none;
+transition:.5s;			
+}
+/* アイコンをど真ん中に*/
+.sns-btn i{
+position:absolute;
+top:50%;
+left:50%;
+-ms-transform:translate(-50%,-50%);
+-webkit-transform:translate(-50%,-50%);
+transform:translate(-50%,-50%);
+}
+/* ボタンにマウスを乗せた時 */
+.sns-btn:hover{
+}
+/* Twitter */
+.twitter-sikaku{
+background:#1592E6;
+}
+/* line@ */
+.line_btn{
+    background-color: #00B900;
+}
+/* Instagramアイコン位置 */
+.insta-sikaku .fa-instagram{
+font-size:35px;	
+}
+/* Instagram紫グラデ背景 */
+.insta-sikaku{
+background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+overflow:hidden;	
+}
+/* Facebook */
+.facebook-sikaku{
+background: linear-gradient(135deg, #6699ff 0%,#3b5998 100%);
+}
+
+
+
+
+
+
+
+
+
+
 /*プロフィール*/
 #text-4{
 }
@@ -989,6 +1095,7 @@ background: linear-gradient(135deg, #6699ff 0%,#3b5998 100%);
 .proph-top img{
     
 }
+
 
 
 
@@ -1333,7 +1440,7 @@ background: linear-gradient(135deg, #6699ff 0%,#3b5998 100%);
 .kiji {
   font-size: 1em;
   margin: 10vh 0px 10vh 0;
-  padding: 0 15px 25px;
+  padding: 25px 15px 25px;
   position: relative;
   box-shadow: 0px 0px 8px gray;
   background-color: #fff;
@@ -1408,7 +1515,7 @@ background: linear-gradient(135deg, #6699ff 0%,#3b5998 100%);
   font-size: 1.5em;
   margin-top: 3em;
   margin-bottom: 1.5em;
-    border-bottom: solid 5px #1592E6;
+    border-bottom: solid 7px #1592E6;
     font-size: 1.6em;
     font-weight: bold;
 }
@@ -1486,7 +1593,9 @@ div#breadcrumb div {
 /* パンくずリスト */
 
 
-/* TOC もくじのカスタマイズ */
+
+
+/* TOC 記事のもくじのカスタマイズ */
 #toc_container{
  margin-top:25px;
  margin-bottom:35px;
@@ -1574,7 +1683,7 @@ padding-left: 16px;
 #toc_container ul ul li a:hover{
  text-decoration:underline
 }
-/* TOC もくじのカスタマイズ */
+/* TOC 記事のもくじのカスタマイズ */
 
 
 
@@ -1588,11 +1697,12 @@ padding-left: 16px;
 
 /* 記事中のcodeのcss */
 code{
+    color: #fff;
     height: auto;
     width: 100%;
     padding: 1em;
     margin: 10px auto;
-    background-color: #D6DEE2;
+    background-color: #272822;
     display: block;
     box-sizing: border-box;
 }
@@ -1617,7 +1727,7 @@ code{
 
 
 
-/*制作費用・手順*/
+/*--Web制作代行の詳細--*/
 .page-id-1603{
     background-color: #fff;
 }
@@ -1710,10 +1820,11 @@ code{
     margin-top: 10px;
     padding: 10px;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
     transition: .3s ease-in-out;
     width: 45%;
+    box-sizing: border-box;
 }
 .douzo:hover{
     box-shadow: 0 13px 20px -3px rgba(0,0,0,0.24);
@@ -1721,13 +1832,100 @@ code{
     -webkit-tap-highlight-color: transparent;
 }
 
-/*制作費用・手順*/
+
+@media (max-width: 568px){
+    .douzo{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+/*サービス内容*/
+.service-content{
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #eeeeee;
+}
+/*サービス内容*/
 
 
 
 
 
-/*サイトデザインページ*/
+/*制作実績ボタン*/
+.create .btn{
+    box-shadow: none;
+    max-width: 500px;
+}
+/*制作実績ボタン*/
+
+
+
+
+/*相談してくださいボタン3つ*/
+.consult .btn{
+    box-shadow: none;
+    max-width: 500px;
+}
+/*相談してくださいボタン3つ*/
+
+
+
+/*よくある質問ボタン*/
+.situ-btn label{
+    height: 3.5em;
+    padding: 6px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #1592E6;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: .3s ease-in-out;
+}
+
+.situ-btn label:active {
+    -webkit-transform: translateY(4px); /* Chrome、Safari用 */
+    -moz-transform: translateY(4px);    /* Firefox用 */
+    -ms-transform: translateY(4px);     /* IE用 */
+    transform: translateY(4px);
+}
+
+.situ-btn input{
+    display: none;
+    transition: .3s ease-in-out;
+}
+
+.situ-btn .text{
+    color: #000;
+    font-weight: bold;
+    display: none;
+    border-left: solid 7px #1592E6;
+    margin-bottom: 50px;
+    padding-left: 10px;
+}
+
+.situ-btn input:checked ~ .text {
+    height: auto;
+    display: block;
+}
+/*よくある質問ボタン*/
+
+
+/*--Web制作代行の詳細--*/
+
+
+
+
+
+/*--サイトデザインページ--*/
 .page-id-1481 .contents{
    
 }
@@ -1744,7 +1942,7 @@ code{
     text-align: center;
 }
 .watsun-about{
-    margin-right: 5%;
+    margin-right: 10%;
 }
 .post-1481 p{
     margin-bottom: 0;
@@ -1835,7 +2033,7 @@ to {
     padding-left: 10px;
 }
 
-/*個別ペーージ*/
+/*--個別ペーージ--*/
 @media(min-width:768px){
 .page .contents{
     width: 100%;
@@ -1848,7 +2046,7 @@ to {
 
 
 
-/*お問い合わせページ*/
+/*--お問い合わせページ--*/
 .page-id-1479 .kiji{
     margin-bottom: 350px;
     background: none;
@@ -1934,9 +2132,6 @@ div.wpcf7 .ajax-loader{
     color: #fff;
     padding: 5px;
 }
-
-
-
 
 
 

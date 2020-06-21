@@ -1,8 +1,9 @@
-<?php get_header(); ?>
+<?php get_header('page'); ?>
 <div class="container">
   <div class="contents">
-    <?php get_template_part('breadcrumbs'); ?>
       
+      
+      <?php get_template_part('breadcrumbs'); ?>
       
       
     <!--記事本文-->

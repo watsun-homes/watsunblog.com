@@ -117,7 +117,7 @@ content="width=device-width, initial-scale=1.0 ">
     
     
     
-
+    
     
     <!--search console-->
     <meta name="google-site-verification" content="CBeDrCH_4Qa4KZmogFXUXFOCHbV3rziGdIHiYaI-jWI" />
@@ -125,7 +125,7 @@ content="width=device-width, initial-scale=1.0 ">
     
     
     
-    
+   
     
     
     <!--サンクスページ-->
@@ -176,9 +176,9 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
        
 <!--タイトルを文字にする場合-->
 <div class="site-title">
-  <h1><a href="<?php echo home_url(); ?>">
+  <div class="title"><a href="<?php echo home_url(); ?>">
     <?php bloginfo( 'name' ); ?><i class="fas fa-user-secret user-secret-white"></i>
-  </a></h1>
+      </a></div>
 </div>
 <!--タイトルを文字にする場合-->
       
@@ -189,7 +189,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
       <label id="nav-open" for="nav-input"><span></span></label>
       <label class="nav-unshown" id="nav-close" for="nav-input"></label>
       <div id="nav-content">
-          <h2>MENU</h2>
+          <div class="menu-title">MENU</div>
   <?php wp_nav_menu( array(
         'theme_location' => 'header-nav', 
         'container' => 'nav',

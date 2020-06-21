@@ -2,7 +2,7 @@
    <div class="beforefooter clearfix">
        <div class="pages">
            <div class="searchwidget">
-           <form class="searchform" id="searchform" role="search" action="https://eatdog.shop" method="get">
+           <form class="searchform" id="searchform" role="search" action="https://watsunblog.com" method="get">
            <div>
                <input name="s" class="searchform-input" id="s" type="search" placeholder="検索" value="" />
                <button class="searchform-submit" id="searchsubmit" type="submit">
