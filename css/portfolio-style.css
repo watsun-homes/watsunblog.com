@@ -1,0 +1,394 @@
+@charset "utf-8";
+/*
+theme Name:watsunblog.com
+Author: watsunblog
+Description: original theme
+version： 1.2.0
+*/
+
+body {
+  font-family: "小塚ゴシック Pr6N", "Times New Roman", "メイリオ", "Meiryo",
+    "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  color: #333; /*文字色*/
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #1592e6;
+}
+ul {
+  list-style: none;
+}
+iframe {
+  width: 100%;
+  max-width: 100%;
+}
+.clear:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+/*-------------ポートフォリオ------------------*/
+body#portfolio {
+  background-image: url(../images/AdobeStock_105746004.jpeg);
+  background-size: contain;
+}
+header {
+  text-align: center;
+}
+header h1 {
+  color: #1592e6;
+  text-align: center;
+  font-size: 2.5em;
+}
+header .menu {
+  max-width: 1080px;
+  margin: 40px auto;
+  display: none;
+}
+header .menu:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.menu a {
+  color: #000;
+}
+header .home,
+header .service,
+header .profile {
+  float: left;
+  color: #000;
+  font-size: 2em;
+  width: 33.333%;
+}
+@media (max-width: 720px) {
+  header .home,
+  header .service,
+  header .profile {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 440px) {
+  header h1 {
+    font-size: 2em;
+  }
+  header .home,
+  header .service,
+  header .profile {
+    font-size: 1em;
+  }
+}
+
+.works {
+  margin: 100px auto;
+}
+.works a:hover {
+  opacity: 0.7;
+}
+.works .title {
+  text-align: center;
+}
+.works .en {
+}
+.works .en p {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
+}
+.works .ja {
+}
+.works .ja h2 {
+  font-size: 1em;
+  margin: 0;
+}
+.works .web {
+  margin: 100px auto;
+}
+.works .web .title {
+}
+.works .web h3 {
+  font-size: 2em;
+  font-weight: lighter;
+}
+.works .web .contents {
+  max-width: fit-content;
+  margin: 20px auto;
+  display: block;
+}
+.web .list-1 {
+  width: 800px;
+  height: 500px;
+  background-image: url(../images/2pcsp%E9%80%8F%E6%98%8E.png);
+  background-size: cover;
+}
+.web .list-2 {
+  width: 800px;
+  height: 500px;
+  background-image: url(../images/65%E5%90%8D%E7%A7%B0%E6%9C%AA%E8%A8%AD%E5%AE%9A-1.png);
+  background-size: cover;
+}
+.web .list-3 {
+  width: 800px;
+  height: 500px;
+  background-image: url(../images/apcsp%E9%80%8F%E6%98%8E.png);
+  background-size: cover;
+}
+
+.works .system {
+  margin: 100px auto;
+}
+.works .system .title {
+}
+.works .system h3 {
+  font-size: 2em;
+  font-weight: lighter;
+}
+.works .system .contents {
+  text-align: center;
+}
+.works .system .contact {
+  margin-bottom: 25px;
+}
+.works .system .contents a {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  max-width: 450px;
+}
+.works .system .contents img {
+  max-width: 450px;
+}
+
+.contact {
+  max-width: 565px;
+  margin: 0 auto;
+  background-color: #dce7ef;
+  padding: 20px 20px;
+}
+.can {
+  max-width: 630px;
+  margin: 0 auto 200px;
+  background-color: #dce7ef;
+  padding: 20px 20px;
+}
+.contact .title,
+.can .title {
+  text-align: center;
+  font-size: 24px !important;
+  font-weight: bold !important;
+  margin-top: 0;
+}
+.contact .contents,
+.can .contents {
+  margin: 20px 0;
+  word-wrap: break-word;
+}
+.contact .btn,
+.can .btn {
+  max-width: 180px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 20px auto;
+  font-size: 1.3em;
+  border-radius: 30px;
+}
+.contact .btn a,
+.can .btn a {
+  color: #fff;
+}
+@media (max-width: 490px) {
+  .contact,
+  .can {
+    max-width: 80%;
+    padding: 20px 20px;
+  }
+  .contact .title,
+  .can .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .contact .contents,
+  .can .contents {
+    margin: 20px 0;
+  }
+  .contact .btn,
+  .can .btn {
+    max-width: 180px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-size: 1.3em;
+    border-radius: 30px;
+  }
+}
+
+footer {
+  margin: 100px 0 0;
+  background-color: #dce7ef;
+  color: #fff;
+  width: 90%;
+  position: absolute;
+  right: 0;
+  border-top-left-radius: 50px;
+}
+footer:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+footer a {
+  color: #fff;
+}
+footer .sns {
+  float: left;
+  padding: 20px 0 20px 80px;
+}
+
+footer .sns i {
+  font-size: 2em;
+  padding: 0 10px;
+  line-height: 90px;
+}
+footer .title {
+  text-align: right;
+  margin-right: 80px;
+  padding: 20px 0;
+  height: 130px;
+}
+footer .footertitle {
+  font-size: 2em;
+  margin-right: 80px;
+}
+footer .copyright {
+}
+@media (max-width: 720px) {
+  footer {
+    margin: 100px 0 0;
+    background-color: #dce7ef;
+    color: #fff;
+    width: 90%;
+    position: absolute;
+    right: 0;
+    border-top-left-radius: 50px;
+  }
+  footer .sns {
+    padding: 20px 0 20px 40px;
+  }
+  footer .sns i {
+    font-size: 1.4em;
+    line-height: 50px;
+  }
+  footer .title {
+    margin-right: 40px;
+    height: 90px;
+    float: left;
+    position: absolute;
+    right: 0;
+  }
+  footer .footertitle {
+    font-size: 1.2em;
+    margin-right: 40px;
+  }
+  footer .copyright {
+    font-size: 12px;
+  }
+}
+@media (max-width: 440px) {
+  footer .title {
+    margin-right: 10px;
+  }
+  footer .footertitle {
+    margin-right: 0px;
+  }
+  footer .copyright {
+    font-size: 12px;
+  }
+  footer .sns {
+    padding: 20px 0 20px 10px;
+  }
+}
+
+.modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.modal__bg {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.modal__content {
+  background-image: url(../images/AdobeStock_105746004.jpeg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  width: 80%;
+}
+
+/* 全体のスタイル */
+.swiper-wrapper {
+  width: 150%;
+  height: 250px;
+}
+/* 全スライド共通スタイル */
+.swiper-slide {
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /*line-height: 250px;*/
+}
+.swiper-slide img {
+}
+/* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
+.swiper-slide:nth-child(4n + 1) {
+}
+/* 4の倍数＋2枚目のスライドのスタイル（2枚目、6枚目…） */
+.swiper-slide:nth-child(4n + 2) {
+}
+/* 4の倍数＋3枚目のスライドのスタイル（3枚目、7枚目…） */
+.swiper-slide:nth-child(4n + 3) {
+}
+/* 4の倍数＋4枚目のスライドのスタイル（4枚目、8枚目…） */
+.swiper-slide:nth-child(4n + 4) {
+}

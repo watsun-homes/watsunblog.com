@@ -1,0 +1,255 @@
+@charset "utf-8";
+/*
+theme Name:watsunblog.com
+Author: watsunblog
+Description: original theme
+version： 1.2.0
+*/
+
+
+/*-----------共通ここから-------------*/
+.page-id-2865 header{
+    position: absolute;
+}
+.flex{
+    display: flex;
+}
+.btn{
+    display: block;
+    max-width: 300px;
+    background-color: #FFBB4E;
+    color: #fff;
+    margin: 10px auto;
+    padding: 10px;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+    text-align: center;
+    border: none;
+}
+/*-----------共通ここまで-------------*/
+
+
+
+
+/*-----------topここから------------*/
+.top {
+        margin: 77px 0 0;
+        padding: 90px 0;
+        color: #fff;
+        position: relative;
+}
+.top:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -4;
+    background-image: url(https://watsunblog.com/wp-content/uploads/2020/04/img_7628.jpg);
+}
+.top:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255, 0.6);
+    z-index: -3;
+    display: block;
+    max-width: inherit;
+    border-bottom: none;
+    margin: 0;
+}
+.top h1{
+    color: #000;
+    margin: 0 auto 10px;
+}
+/*-----------topここまで-------------*/
+
+
+
+
+
+
+
+/*-----------sec1ここから------------*/
+.sec1{
+    margin-bottom: 70px;
+}
+.sec1 .left{
+    width: 50%;
+    padding-right: 90px;
+}
+.sec1 .right{
+    width: 50%;
+}
+.sec1 .right .tit_main{
+    font-size: 25px;
+    font-weight: bold;
+}
+.sec1 .right ul{
+    list-style: none;
+}.sec1 .right ul li{
+    font-size: 20px;
+    font-weight: bold;
+}
+/*-----------sec1ここまで-------------*/
+
+
+
+
+
+
+/*-----------sec2ここから------------*/
+.sec2{
+    margin-bottom: 70px;
+}
+.sec2 .flex{
+    align-items: center;
+}
+.sec2 .left{
+    width: 45%;
+}
+.sec2 .right{
+    width: 55%;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.sec2 .right .tit{
+    text-align: center;
+}
+/*-----------sec2ここまで-------------*/
+
+
+
+
+
+/*-----------sec3ここから------------*/
+.sec3{
+    margin-bottom: 70px;
+}
+.sec3 .tit{
+    margin: 0 auto 100px;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+.sec3 .tit:before{
+    display: block;
+    content: "";
+    width: 200px;
+    height: 8px;
+    background-color: #11376B;
+    position: absolute;
+    left: -60px;
+    bottom: -20px;
+}
+.sec3 .tit:after{
+    display: block;
+    content: "";
+    width: 200px;
+    height: 8px;
+    background-color: #11376B;
+    position: absolute;
+    right: -60px;
+    top: -20px;
+}
+.sec3 .tit .under_tit{
+    font-size: 30px;
+    font-weight: bold;
+}
+.sec3 .tit h2{
+    font-size: 20px;
+    margin: 0;
+}
+.sec3 .service_li{
+    margin: 0 auto 30px;
+    max-width: 900px;
+}
+.sec3 .service_li:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.sec3 .service_li .content{
+    float: left;
+    width: 60%;
+}
+.sec3 .service_li .content h3{
+    font-size: 22px;
+    margin: 0;
+}
+.sec3 .service_li .img{
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+.sec3 .service_li:nth-child(odd) .content{
+    float: right;
+}
+.sec3 .service_li:nth-child(odd) .img{
+    float: right;
+}
+.sec3 .service_li .img img{
+    border: solid 1px #000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+/*-----------sec3ここまで-------------*/
+
+
+
+
+
+
+/*-----------sec4ここから------------*/
+.sec4{
+    
+}
+.sec4 .tit{
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 180px;
+    align-items: center;
+    display: flex;
+}
+.sec4 .tit:before{
+    position: absolute;
+    left: -180px;
+    display: block;
+    content: "";
+    width: 150px;
+    height: 1px;
+    background-color: #000;
+}
+.sec4 .plan_content .plan_li{
+    width: 30%;
+    border: solid 1px #FFBB4E;
+    margin: 0 1.6%;
+    position: relative;
+}
+.sec4 .plan_content .plan_li .sub_tit{
+    position: absolute;
+    top: -16px;
+    left: 50px;
+    background-color: #fff;
+    padding: 0 10px;
+}
+/*-----------sec4ここまで-------------*/
+
+
+
+
+
+
+/*-----------sec1ここから------------*/
+
+/*-----------sec1ここまで-------------*/
