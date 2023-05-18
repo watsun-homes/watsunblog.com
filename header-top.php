@@ -7,7 +7,6 @@
   <meta property="og:locale" content="ja_JP">
 
 
-
   <!--googleadsence-->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
