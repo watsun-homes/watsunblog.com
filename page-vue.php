@@ -35,19 +35,18 @@
             <div class="menu_btn">
             </div>
 
-            <nav>
-                <ul id="main_menu">
-                    <li class="main_list" v-on:mouseover="mouseOverAction" v-on:mouseleave="mouseLeaveAction">
-                        <a href="">ページ１</a>
-                        <ul id="sub_menu" v-show="truefalse">
-                            <li><a href="">サブページ１</a></li>
-                            <li><a href="">サブページ２</a></li>
-                        </ul>
-                    </li>
-                    <li class="main_list" v-on:mouseover="mouseOverAction" v-on:mouseleave="mouseLeaveAction">
-                        <a href="">ページ２</a>
-                        <ul id="sub_menu" v-show="truefalse">
-                            <li><a href="">サブページ１</a></li>
+            <nav id="nav">
+                <ul>
+                    <li v-for="item in items">
+                        <a :href="item.url" v-bind:class="{active:active===item}" v-on:click="dropdown(item)">
+                            {{ item.name }}
+                        </a>
+                        <ul class="dropdown" v-if="active===item">
+                            <li v-for="child in item.children">
+                                <a :href="child.url" v-bind:label="chile.name">
+                                    {{ child.name }}
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -56,8 +55,6 @@
         </div>
 
     </header>
-
-
 
     <main id="main">
 
