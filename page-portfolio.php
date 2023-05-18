@@ -90,7 +90,8 @@
                         <h3 class="title">フロントエンド</h3>
                         <div class="contents">
                             主にJavascript(Jquery,Vue.js,ajax)を使用して作成したページです。<br>
-                            一部PHPで処理した箇所もあります。
+                            一部PHPで処理した箇所もあります。<br>
+                            下記画像をクリックして閲覧下さい！
                         </div>
                     </div>
 
@@ -115,11 +116,11 @@
         <div class="can">
             <div class="title">SKILL</div>
             <div class="contents">
-                Web制作：Javascript/Jquery/Vue.js/React/HTML/CSS/sass/PHP/Mysql/WordPress/Github<br>
+                言語・ツール：Javascript/Jquery/Vue.js/React/HTML/CSS/SASS/PHP/Mysql/WordPress/Github<br>
                 Webデザイン：Photoshop/Illustrator/XD<br>
                 SEO対策：内部対策/外部対策
             </div>
-            <div class="btn"><a href="https://watsunblog.com/service/">SERVICE</a></div>
+            <!--div class="btn"><a href="https://watsunblog.com/service/">SERVICE</a></div-->
         </div>
 
 

@@ -72,19 +72,59 @@ new Vue({
 });
 
 //----------------------------プルダウン↓-------------------------------------
-new Vue({
-  el: "#main_menu",
+var nav = new Vue({
+  el: "#nav",
   data: {
-    truefalse: false,
-    hoverIndex: null,
+    isOpen: false,
+    active: "",
+    items: [
+      {
+        url: "#",
+        name: "Home",
+      },
+      {
+        url: "#",
+        name: "About",
+        children: [
+          {
+            url: "#",
+            name: "About1",
+          },
+          {
+            url: "#",
+            name: "About2",
+          },
+        ],
+      },
+      {
+        url: "#",
+        name: "Service",
+        children: [
+          {
+            url: "#",
+            name: "Service1",
+          },
+          {
+            url: "#",
+            name: "Service2",
+          },
+          {
+            url: "#",
+            name: "Service3",
+          },
+        ],
+      },
+      {
+        url: "#",
+        name: "Contact",
+      },
+    ],
   },
+
   methods: {
-    mouseOverAction: function (index) {
-      this.truefalse = true;
-      this.hoverIndex = index;
-    },
-    mouseLeaveAction: function () {
-      this.truefalse = false;
+    dropdown: function (item) {
+      this.active = this.active === item ? item : "";
+      console.log(this.active);
     },
   },
 });

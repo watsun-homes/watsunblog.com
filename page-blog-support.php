@@ -1,6 +1,6 @@
 <?php get_header("top"); ?>
 
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/blog_support.css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/blog-support.css" />
 
 
 <div class="top">
@@ -66,7 +66,7 @@
                 <div class="txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
             </div>
             <div class="img">
-                <img src="/images/topleft.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/topleft.png" alt="">
             </div>
         </div>
         <div class="service_li">
@@ -75,7 +75,7 @@
                 <div class="txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
             </div>
             <div class="img">
-                <img src="/images/topleft.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/topleft.png" alt="">
             </div>
         </div>
         <div class="service_li">
@@ -84,7 +84,7 @@
                 <div class="txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
             </div>
             <div class="img">
-                <img src="/images/topleft.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/topleft.png" alt="">
             </div>
         </div>
         <div class="service_li">
@@ -93,7 +93,7 @@
                 <div class="txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
             </div>
             <div class="img">
-                <img src="/images/topleft.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/topleft.png" alt="">
             </div>
         </div>
         <div class="service_li">
@@ -102,7 +102,7 @@
                 <div class="txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
             </div>
             <div class="img">
-                <img src="/images/topleft.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/topleft.png" alt="">
             </div>
         </div>
         <div class="service_li">
@@ -111,7 +111,7 @@
                 <div class="txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
             </div>
             <div class="img">
-                <img src="/images/topleft.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/topleft.png" alt="">
             </div>
         </div>
         <div class="service_li">
@@ -120,7 +120,7 @@
                 <div class="txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
             </div>
             <div class="img">
-                <img src="/images/topleft.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/topleft.png" alt="">
             </div>
         </div>
         <div class="service_li">
@@ -129,7 +129,7 @@
                 <div class="txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
             </div>
             <div class="img">
-                <img src="/images/topleft.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/topleft.png" alt="">
             </div>
         </div>
     </section>
@@ -203,25 +203,25 @@
 
             <div class="flow_li">
                 <div class="img">
-                    <img src="/images/topleft.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/topleft.png" alt="">
                 </div>
                 <div class="txt">お問い合わせ・相談</div>
             </div>
             <div class="flow_li">
                 <div class="img">
-                    <img src="/images/topleft.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/topleft.png" alt="">
                 </div>
                 <div class="txt">サポート開始</div>
             </div>
             <div class="flow_li">
                 <div class="img">
-                    <img src="/images/topleft.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/topleft.png" alt="">
                 </div>
                 <div class="txt">相談があれば随時ご連絡</div>
             </div>
             <div class="flow_li">
                 <div class="img">
-                    <img src="/images/topleft.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/topleft.png" alt="">
                 </div>
                 <div class="txt">開始３０日以内にお振込</div>
             </div>

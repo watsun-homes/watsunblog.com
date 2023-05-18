@@ -3320,71 +3320,7 @@ span.blue {
     padding: 0 30px;
   }
 }
-
 /*トップページ*/
-
-/*swiper.js*/
-.modal {
-  display: none;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999999999;
-}
-
-.modal__bg {
-  background: rgba(0, 0, 0, 0.8);
-  height: 100vh;
-  position: absolute;
-  width: 100%;
-}
-
-.modal__content {
-  background-image: url(images/AdobeStock_105746004.jpeg);
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 40px;
-  width: 80%;
-}
-
-/* 全体のスタイル */
-.swiper-wrapper {
-  width: 150%;
-  height: 250px;
-}
-
-/* 全スライド共通スタイル */
-.swiper-slide {
-  color: #ffffff;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  line-height: 250px;
-}
-
-.swiper-slide img {
-}
-
-/* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
-.swiper-slide:nth-child(4n + 1) {
-}
-
-/* 4の倍数＋2枚目のスライドのスタイル（2枚目、6枚目…） */
-.swiper-slide:nth-child(4n + 2) {
-}
-
-/* 4の倍数＋3枚目のスライドのスタイル（3枚目、7枚目…） */
-.swiper-slide:nth-child(4n + 3) {
-}
-
-/* 4の倍数＋4枚目のスライドのスタイル（4枚目、8枚目…） */
-.swiper-slide:nth-child(4n + 4) {
-}
-
-/*swiper.js*/
 
 /*サービス*/
 .page-id-2325 {
@@ -4273,6 +4209,7 @@ span.toiback {
 /*４０４ページ*/
 .error404 {
   background-color: #fff;
+  margin-top: 100px;
 }
 .error404 h1 {
   text-align: center;
