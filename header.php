@@ -4,8 +4,6 @@
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta property="og:locale" content="ja_JP">
-
 
   <!--googleadsence-->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -16,7 +14,6 @@
     });
   </script>
   <!--googleadsence-->
-
 
   <!--- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122670438-4"></script>
@@ -45,7 +42,6 @@
     gtag('config', 'G-TFWGN4PM5J');
   </script>
 
-
   <!--個別ページ用のmetaデータ-->
   <?php if (is_single() || is_page()) : ?>
     <?php setup_postdata($post) ?>
@@ -57,9 +53,6 @@
       }  ?>
       <meta name="keywords" content="<?php echo implode(',', $kwds); ?>">
       <!--個別ページ用のmetaデータ--><?php endif; ?>
-
-
-
 
   <?php else : ?><!--個別ページ以外のメタデータ-->
     <meta name="description" content="<?php bloginfo('description'); ?>">
@@ -76,10 +69,6 @@
     <meta property="og:description" content="<?php bloginfo('description') ?>">
     <!--個別ページ以外のメタデータ--><?php endif; ?>
 
-
-
-
-
   <!--サンクスページ-->
   <script>
     document.addEventListener('wpcf7mailsent', function(event) {
@@ -94,10 +83,6 @@
   <?php endif; ?>
   <!--ヘッダー画像読み込み-->
 
-
-
-
-
   <!--css呼び出し、fontawwesome、アイコン呼び出し-->
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 
@@ -107,8 +92,6 @@
   <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri() ?>/images/webclipicon.png" />
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico" />
   <!--css呼び出し、fontawwesome、アイコン呼び出し-->
-
-
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

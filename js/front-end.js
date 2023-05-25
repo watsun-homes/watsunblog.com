@@ -387,3 +387,37 @@ $(function () {
       });
   });
 });
+
+//----------------------------vue ↓------------------------------
+const URL_API = "https://api.zipaddress.net/";
+
+const vm = new Vue({
+  el: "#demo", //対象要素を取得
+  data: {
+    inputZip: "", //入力された値
+    defaultZip: "半角数字で入力", //デフォルトでの値
+    results: "", //検索結果の値。最初は空
+  },
+  computed: {
+    computedZip: function () {
+      return !isNaN(this.inputZip) && this.inputZip.length == 7
+        ? this.inputZip
+        : this.defaultZip;
+    },
+  },
+  methods: {
+    getAddress: function (z) {
+      //zにはcomputedZipが入る
+      let params = {
+        params: {
+          zipcode: z,
+        },
+      };
+      axios.get(URL_API, params).then((res) => {
+        //resにはaxiousで返されたオブジェクトが入る
+        this.results =
+          res.data.code == 200 ? res.data.data.fullAddress : res.data.message;
+      });
+    },
+  },
+});
