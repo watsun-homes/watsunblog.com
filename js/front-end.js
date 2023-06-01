@@ -1,4 +1,4 @@
-//アニメーション
+//----------------------------文字アニメーション↓------------------------------
 $(".end-right").css("left", "-10%");
 $(".end-left").css("left", "110%");
 $(".end-right").velocity(
@@ -24,7 +24,7 @@ setTimeout(function () {
   );
 }, 1200);
 
-//計算
+//----------------------------計算↓------------------------------
 function keisan() {
   // 商品1
   var price1 = document.form1.goods1.selectedIndex * 500; // 単価を設定
@@ -44,7 +44,7 @@ function keisan() {
   document.form1.field_total.value = total; // 合計を表示
 }
 
-//時計
+//----------------------------時計↓------------------------------
 function getElements() {
   const time = new Date();
   const hour = time.getHours();
@@ -66,7 +66,7 @@ function getElements() {
 setInterval(getElements, 1000);
 
 $(function () {
-  //ハンバーガーメニュー
+  //----------------------------ハンバーガーメニュー↓------------------------------
   $(".menu_btn").click(function () {
     $(".menu_btn").toggleClass("add");
     $(".header-box nav").toggleClass("add");
@@ -76,11 +76,7 @@ $(function () {
     $(".header-box nav").removeClass("add");
   });
 
-  //プルダウンメニュー
-  //１："#main_menu li"要素がマウスオーバーされたら関数を実行
-  //２："#sub_menu"要素をスライドダウンさせる
-  //３：マウスアウトされたら関数を実行
-  //４："#sub_menu"要素をスライドアップさせる
+  //----------------------------ホバーダウン↓------------------------------
   $("#main_menu .main_list")
     .mouseover(function () {
       $("#sub_menu", this).stop().slideToggle();
@@ -89,7 +85,7 @@ $(function () {
       $("#sub_menu", this).stop().slideToggle();
     });
 
-  //スクロールしたら固定表示
+  //----------------------------スクロール固定↓------------------------------
   $(window).scroll(function () {
     const scroll_btn = $(window).scrollTop();
     const Element_btn = $("#animation").height();
@@ -105,7 +101,7 @@ $(function () {
     }
   });
 
-  //ポップアップ
+  //----------------------------ポップアップ↓------------------------------
   var popup = document.getElementById("js-popup");
   if (!popup) return;
   popup.classList.add("is-show");
@@ -122,11 +118,7 @@ $(function () {
   closePopup(blackBg);
   closePopup(closeBtn);
 
-  //フェードイン
-  //１："fade-in"クラスがついている要素それぞれに関数を実行
-  //２：スクロールのトップ、要素のトップ、ウィンドウの高さを取得
-  //３：もしスクロールトップが要素のトップーウィンドウの高さを超えたら
-  //４："fade-in"クラスがついている要素それぞれに"view"クラスを追加
+  //---------------------------フェードイン↓------------------------------
   $(window).scroll(function () {
     $(".fade-in").each(function () {
       const scroll = $(window).scrollTop();
@@ -139,13 +131,7 @@ $(function () {
     });
   });
 
-  //タブ
-  //１：タブとコンテンツのセレクターを全て取得
-  //２：特定のタブがクリックされたらその添字に対応してtabToggle関数が実行される
-  //３：tabToggle関数の作成
-  //４：他のタブがクリックされたら今タブとコンテンツについている"active"クラスを消す
-  //５：クリックしたタブに"active"クラスを追加
-  //６：そのタブの添字と同じ添字のコンテンツに"active"クラスを追加
+  //----------------------------タブ↓------------------------------
   const tabItem = document.querySelectorAll(".tab-item");
   const tabContent = document.querySelectorAll(".tab-content");
 
@@ -154,7 +140,6 @@ $(function () {
   }
 
   function tabToggle() {
-    //まずは今ついているactiveを削除
     for (let i = 0; i < tabItem.length; i++) {
       tabItem[i].classList.remove("active");
     }
@@ -162,16 +147,15 @@ $(function () {
       tabContent[i].classList.remove("active");
     }
 
-    //クリックした要素にactiveを追加
-    this.classList.add("active"); //クリックしたtabItemにactive追加
+    this.classList.add("active");
 
-    const aryTabs = Array.prototype.slice.call(tabItem); //配列へ変換
-    const index = aryTabs.indexOf(this); //配列のクリック要素の番号を取得
+    const aryTabs = Array.prototype.slice.call(tabItem);
+    const index = aryTabs.indexOf(this);
 
     tabContent[index].classList.add("active");
   }
 
-  //グラフ
+  //----------------------------グラフ↓------------------------------
   google.charts.load("current", {
     packages: ["corechart"],
   });
@@ -272,7 +256,7 @@ $(function () {
     chart.draw(data, options);
   }
 
-  //スライダー
+  //----------------------------スライダー↓------------------------------
   var swiper = new Swiper(".swiper-container", {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -304,12 +288,12 @@ $(function () {
     },
   });
 
-  //プルダウン
+  //----------------------------プルダウン↓------------------------------
   $("#pulldown .pull_box").click(function () {
     $(".pull_txt", this).slideToggle();
   });
 
-  //モーダルリンク
+  //----------------------------モーダルリンク↓------------------------------
   $(function () {
     mw(".js-modal-open", ".js-modal", ".js-modal-close");
     mw(".js-modal-open2", ".js-modal2", ".js-modal-close2");
@@ -326,7 +310,7 @@ $(function () {
     });
   }
 
-  //ajax
+  //----------------------------ajax↓------------------------------
 
   //テキスト変更
   $(".sample_btn").click(function () {

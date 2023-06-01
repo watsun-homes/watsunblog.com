@@ -3,7 +3,7 @@
 
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/portfolio-style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -78,12 +78,12 @@
                         </div>
                     </div>
 
-                    <h4>HTML・CSS・Javascriptで作成されたページ</h4>
+                    <h4>HTML・CSS・Javascriptで作成されたページ↓</h4>
                     <a href="https://watsunblog.com/front-end/" target="_blank">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/front-end.png">
                     </a>
 
-                    <h4>Vue.jsで作成されたページ</h4>
+                    <h4>Vue.jsで作成されたページ↓</h4>
                     <a href="https://watsunblog.com/front-end/vue/" target="_blank">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/vue.png">
                     </a>
@@ -98,7 +98,8 @@
             <div class="contents">
                 言語・ツール：Javascript/Jquery/Vue.js/React/HTML/CSS/SASS/PHP/Mysql/WordPress/Github<br>
                 Webデザイン：Photoshop/Illustrator/XD<br>
-                SEO対策：内部対策/外部対策
+                SEO対策：内部対策/外部対策<br>
+                Github：<a href="https://github.com/watsun-homes" target="_blank">https://github.com/watsun-homes</a>
             </div>
             <!--div class="btn"><a href="https://watsunblog.com/service/">SERVICE</a></div-->
         </div>
@@ -118,7 +119,7 @@
     <footer>
         <div class="sns">
             <a href="https://mobile.twitter.com/watsunblog" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/watsunblog" target="_blank"><i class="fab fa-instagram"></i></a>
+            <!--a href="https://www.instagram.com/watsunblog" target="_blank"><i class="fab fa-instagram"></i></a-->
         </div>
         <div class="title">
             <div class="footertitle"><a href="https://watsunblog.com/">WATSUNBLOG</a></div>

@@ -169,7 +169,58 @@ const tab = new Vue({
   },
 });
 
-//----------------------------スライダー↓------------------------------
+//----------------------------グラフ↓------------------------------
+var graph = new Vue({
+  el: "#graph",
+  data: {
+    labels: ["HTML", "CSS", "JavaScript", "PHP"],
+    data: [30, 30, 25, 15],
+    color: ["darkRed", "orange", "pink", "lime"],
+    labels2: ["HTML", "CSS", "JavaScript", "PHP"],
+    data2: [30, 30, 25, 15],
+    color2: ["darkRed", "orange", "pink", "lime"],
+  },
+  mounted: function () {
+    var ctx = document.getElementById("myChart").getContext("2d");
+    var ctx2 = document.getElementById("myChart2").getContext("2d");
+    var myChart = new Chart(ctx, {
+      type: "pie", //line（線）,bar（棒）,pie（円）,radar,bubble,scatter
+      data: {
+        labels: this.labels,
+        datasets: [
+          {
+            label: "使用言語",
+            data: this.data,
+            backgroundColor: this.color,
+            // barderColor: "#000",
+          },
+        ],
+      },
+      options: {
+        tooltips: {},
+      },
+    });
+    var myChart2 = new Chart(ctx2, {
+      type: "bar",
+      data: {
+        labels: this.labels2,
+        datasets: [
+          {
+            label: "使用言語",
+            data: this.data2,
+            backgroundColor: this.color2,
+            // barderColor: "#000",
+          },
+        ],
+      },
+      options: {
+        tooltips: {},
+      },
+    });
+  },
+});
+
+//----------------------------スライダー↓---------------------------
 Vue.use(VueAwesomeSwiper);
 var slider = new Vue({
   el: "#slider",
@@ -204,6 +255,77 @@ var slider = new Vue({
           spaceBetween: 10,
         },
       },
+    },
+  },
+});
+
+//----------------------------計算↓------------------------------
+var keisan = new Vue({
+  el: "#keisan",
+  data: {
+    a: 500,
+    b: 1,
+    c: 800,
+    d: 1,
+  },
+  computed: {
+    feeone: function () {
+      return this.a * this.b;
+    },
+    feetwo: function () {
+      return this.c * this.d;
+    },
+    sum: function () {
+      return this.a * this.b + this.c * this.d;
+    },
+    tax: function () {
+      return Math.ceil(this.sum * 0.1);
+    },
+  },
+});
+
+//----------------------------時計↓------------------------------
+var clock = new Vue({
+  el: "#clock",
+  data: {
+    time: "",
+    hour: "",
+    minute: "",
+    second: "",
+    degreeHour: "",
+    degreeMin: "",
+    degreeSec: "",
+    clockHour: "",
+    clockMin: "",
+    clockSec: "",
+  },
+  mounted: function () {
+    setInterval(this.getElements, 1000);
+  },
+  methods: {
+    getElements: function () {
+      this.time = new Date();
+      this.hour = this.time.getHours();
+      this.minute = this.time.getMinutes();
+      this.second = this.time.getSeconds();
+      this.degreeHour = (this.hour / 12) * 360;
+      this.degreeMin = (this.minute / 60) * 360;
+      this.degreeSec = (this.second / 60) * 360;
+      this.clockHour = document.getElementsByClassName("clock-hour")[0];
+      this.clockMin = document.getElementsByClassName("clock-min")[0];
+      this.clockSec = document.getElementsByClassName("clock-sec")[0];
+      this.clockHour.style.setProperty(
+        "transform",
+        `rotate(${this.degreeHour}deg)`
+      );
+      this.clockMin.style.setProperty(
+        "transform",
+        `rotate(${this.degreeMin}deg)`
+      );
+      this.clockSec.style.setProperty(
+        "transform",
+        `rotate(${this.degreeSec}deg)`
+      );
     },
   },
 });

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/vue.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:300,100' rel='stylesheet' type='text/css'>
     <script src="https://cdn.jsdelivr.net/npm/swiper@5.3.6/js/swiper.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/swiper@5.3.6/css/swiper.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue-awesome-swiper@3.1.2/dist/vue-awesome-swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
     <?php wp_head(); ?>
 </head>
 
@@ -114,6 +114,7 @@
 
         <section class="section02">
             <div id="tab">
+                <h2>スライダー</h2>
                 <div class="container">
                     <ul class="tab_nav">
                         <li @click="select('1')" v-bind:class="{'active': show == '1'}">
@@ -135,12 +136,16 @@
             </div>
         </section>
 
-        <section class="section03" style="display:none;">
-            <div id="graph"></div>
+        <section class="section03">
+            <div id="graph" class="graph_box">
+                <div class="graph"><canvas id="myChart"></canvas></div>
+                <div class="graph"><canvas id="myChart2"></canvas></div>
+            </div>
         </section>
 
         <section class="section04">
             <div id="slider">
+                <h2>スライダー</h2>
                 <swiper :options="swiperOptions">
                     <swiper-slide>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/portfolio_watsunblog.png" alt="slider01">
@@ -161,8 +166,62 @@
             </div>
         </section>
 
-        <section class="section05" style="display:none;">
-            <div id="calculation"></div>
+        <section class="section05">
+            <div id="keisan">
+                <h2>計算</h2>
+                <table class='table'>
+                    <thead>
+                        <tr>
+                            <th>商品名</th>
+                            <th>価格</th>
+                            <th>数量</th>
+                            <th>金額</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>商品サンプル1</td>
+                            <td align="right">{{a}}</td>
+                            <td>
+                                <input class='form-control' type='number' v-model='b'>
+                            </td>
+                            <td>{{feeone}}円</td>
+                        </tr>
+                        <tr>
+                            <td>商品サンプル2</td>
+                            <td align="right">{{c}}</td>
+                            <td>
+                                <input class='form-control' type='number' v-model='d'>
+                            </td>
+                            <td>{{feetwo}}円</td>
+                        </tr>
+                        <tr>
+                            <td align="right" colspan="3"><strong>小計</strong></td>
+                            <td>{{sum}}円</td>
+                        </tr>
+                        <tr>
+                            <td align="right" colspan="3"><strong>消費税</strong></td>
+                            <td>{{tax}}円</td>
+                        </tr>
+                        <tr>
+                            <td align="right" colspan="3"><strong>合計</strong></td>
+                            <td>{{sum + tax}}円</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="clock">
+                <h2>時計（現在時刻）</h2>
+                <div class="edge-clock">
+                    <span class="clock-hour"></span>
+                    <span class="clock-min"></span>
+                    <span class="clock-sec"></span>
+                    <span class="clock-12">12</span>
+                    <span class="clock-3">3</span>
+                    <span class="clock-6">6</span>
+                    <span class="clock-9">9</span>
+                </div>
+            </div>
         </section>
 
         <section class="section06">
