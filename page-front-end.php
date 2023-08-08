@@ -319,7 +319,8 @@
         </section>
 
         <section class="section09" style="display:none;">
-            <h2></h2>
+            <h2>JSON</h2>
+            <div id="json"></div>
         </section>
 
     </main>
