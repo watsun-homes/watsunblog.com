@@ -59,6 +59,7 @@ iframe {
 body#portfolio {
   background-image: url(../images/AdobeStock_105746004.jpeg);
   background-size: contain;
+  background-attachment: fixed;
 }
 header {
   text-align: center;

@@ -961,6 +961,19 @@ footer .footer-bottom .copyright {
 
 /*------サイドバー一括------*/
 
+/*広告埋め込み*/
+#quads-ad1_widget,
+.quads-ad1_widget {
+  background-color: inherit;
+}
+/*広告埋め込み*/
+
+/*Twitter埋め込み*/
+#text-7 {
+  background-color: inherit;
+}
+/*Twitter埋め込み*/
+
 /*カテゴリウィジェット*/
 #categories-4 ul {
   padding: 30px 0;
@@ -1164,6 +1177,9 @@ input#s {
 /*人気記事ウィジェット*/
 
 /*メニューウィジェット*/
+#text-3 {
+  display: none;
+}
 .textwidget {
   margin: 0;
 }
@@ -2305,38 +2321,31 @@ td {
 
 /* TOC もくじのカスタマイズ */
 #toc_container {
-  margin-top: 25px;
-  margin-bottom: 35px;
+  margin: 25px auto 35px;
   border-radius: 4px;
   font-size: 16px;
-  /* 文字の大きさ */
   background-color: #edf6ff;
-  /* 背景色 */
   border: 2px solid #1592e6;
-  /* 外枠の設定 */
 }
 
 #toc_container .toc_title {
   font-size: 18px;
-  /* タイトルの文字の大きさ */
   font-weight: bold;
   color: #fff;
-  /* タイトルの文字色 */
   text-align: left;
   background-color: #1592e6;
   height: 36px;
   line-height: 36px;
+  margin-bottom: 0;
 }
 
 /* タイトル前のアイコン　FontAwesomeの設定 */
 #toc_container .toc_title:before {
   content: "\f101";
-  /* FontAwesomeのコード */
   font-family: "Font Awesome 5 Free";
   padding-right: 6px;
   padding-left: 16px;
   font-size: 18px;
-  /* アイコンの大きさ */
   color: #fff;
 }
 
@@ -2389,13 +2398,12 @@ td {
 }
 
 /*サイドバー目次*/
-#sidebar-scroll {
-}
 #sidebar-scroll h4 {
   text-align: center;
   background-color: #1592e6;
   color: #fff;
   padding: 6px 0;
+  margin-top: 0;
 }
 ul.toc_widget_list {
   list-style: none;
@@ -2403,6 +2411,7 @@ ul.toc_widget_list {
   padding: 25px 15px;
   margin-top: 0;
   max-height: 250px;
+  max-width: 350px;
   overflow: scroll;
 }
 ul.toc_widget_list a {
@@ -3809,6 +3818,8 @@ span.blue {
   border-bottom: solid 1px #707070;
   text-align: left;
   color: #000;
+  padding-top: 100px;
+  margin-top: -30px;
 }
 
 .page-id-2244 .kiji h2:after {

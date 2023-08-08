@@ -106,18 +106,4 @@
   <?php get_sidebar(); ?>
 </main>
 <script src="<?php echo get_template_directory_uri(); ?>/js/scroll.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/mokuji.js"></script>
-<style>
-  #mokuji_fix {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    z-index: 999999;
-  }
-</style>
 <?php get_footer(); ?>
